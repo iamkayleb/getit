@@ -3,29 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetIt</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>GetIt</h1>
+    <div class="sign-in-up-container">
+        <div class="left-side">
+          <div class="signin-panel">
+            <h1 class="sign">
+              Sign in
+            </h1>
+            <div class="media-icons">
+                <img src='facebook-line.svg' alt="" />
+                <img src='google-line.svg' alt="" />
             </div>
-        </nav>
-        <img src="./woman-eating.jpg" alt="">
-        <div class="hero">
-            <div class="hero-text">
-                <!-- <h1>Yo, </br> need something to eat ASAP?</h1>
-                <p>We got you covered</p> -->
+            <p>or use your account</p>
+            <form action="">
+              <input type="text" placeholder='Email'/>
+              <input type="text" placeholder='Password'/>
+              <p>Forgot your password?</p>
+              <button class='signin-btn'>Sign in</button>
+            </form>
+          </div>
+        <div class='signup-panel'>
+        <h1 class="sign">
+            Create Account
+          </h1>
+          <div class="media-icons">
+              <img src='facebook-line.svg' alt="" />
+              <img src='google-line.svg' alt="" />
+          </div>
+          <p>or use your email for registration</p>
+          <form action="">
+            <input type="text" placeholder='First Name'/>
+            <input type="text" placeholder='Last Name'/>
+            <input type="text" placeholder='Email'/>
+            <input type="text" placeholder='Password'/>
+            
+            <button class='signin-btn'>Sign Up</button>
+          </form>
+        </div>
+          
+        </div>
+        <div class="right-side">
+            <div class="right-signup">
+                <h1 class="greeting">Hello, Friend!</h1>
+                <p>New here? Get started with us right now</p>
+                <button class="signup-btn btn">Sign up</button>
             </div>
-            <div class="signup-login">
-                
-                <a href="./signup.html" ><button type="button" class="sign-up">Create an account</button></a>
-                <p>or</p>
-                <button type="button" class="login">Log in to an existing account</button>
+            <div class="right-signin">
+                <h1 class="greeting">Welcome Back</h1>
+                <p>Log In to your account</p>
+                <button class="login-btn btn">Log In</button>
             </div>
         </div>
-    </header>
+        
+      </div>
+
+      <script src="app.js"></script>
 </body>
 </html>
